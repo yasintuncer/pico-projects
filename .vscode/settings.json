@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "cyw43_ll.h": "c",
+        "cyw43_config.h": "c"
+    }
+}

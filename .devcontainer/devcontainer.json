@@ -1,0 +1,27 @@
+{
+    "name": "Raspberyy Pi Pico SDK DevContainer",
+    "dockerFile": "Dockerfile",
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "mkdir -p build && cd build && cmake .. -DPICO_BOARD=pico_w && make -j4 && make install",
+    "shutdownAction": "stopContainer",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.cpptools-extension-pack"
+            ]
+        },
+        "settings": {
+            "terminal.integrated.defaultProfile.linux": "bash",
+            "terminal.integrated.profiles.linux": {
+                "bash": {
+                    "path": "/bin/bash"
+                }
+            }
+        }
+    },
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ]
+}
