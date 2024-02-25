@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "cyw43_ll.h": "c",
-        "cyw43_config.h": "c"
+        "cyw43_config.h": "c",
+        "cyw43.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "cyw43_configport.h": "c",
+        "cyw43_arch.h": "c"
     }
 }

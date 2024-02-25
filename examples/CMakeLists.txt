@@ -1,0 +1,2 @@
+add_subdirectory(get_mac_example)
+add_subdirectory(flash)
